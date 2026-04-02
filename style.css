@@ -1,0 +1,55 @@
+:root {
+    --bg-dark: #05070a;
+    --card-bg: #11141b;
+    --success: #22c55e;
+    --warning: #f59e0b;
+    --text-muted: #94a3b8;
+}
+
+body {
+    background: var(--bg-dark);
+    color: #fff;
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.dashboard {
+    flex: 1;
+    padding: 2rem;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 2rem;
+}
+
+.monitor-grid {
+    display: grid;
+    /* Zero media queries: let the browser decide sizing */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+}
+
+.api-card {
+    background: var(--card-bg);
+    border: 1px solid #1e293b;
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.ping-display {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--success);
+}
+
+.status-dot {
+    height: 10px;
+    width: 10px;
+    background: var(--success);
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 0 10px var(--success);
+}
