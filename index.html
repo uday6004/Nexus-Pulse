@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus-Pulse | Real-Time API Monitor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="logo">NP</div>
+    </nav>
+    <main class="dashboard">
+        <header class="top-bar">
+            <h1>Nexus-Pulse <span class="badge" id="live-indicator">LIVE</span></h1>
+            <p>Monitoring 4 active endpoints...</p>
+        </header>
+
+        <section class="monitor-grid" id="main-monitor">
+            <div class="skeleton"></div>
+            <div class="skeleton"></div>
+            <div class="skeleton"></div>
+        </section>
+    </main>
+    <script src="monitor.js" type="module"></script>
+</body>
+</html>
